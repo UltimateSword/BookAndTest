@@ -11,7 +11,9 @@ def find_max_palindrome(s):
     """
     length = len(s)
     dp = [[False for _ in range(length)] for _ in range(length)]
-    res = ''
+    if length <= 1:
+        return s
+    res = s[0]
     for r in range(length):
         for l in range(r):
             dp[l][r] = s[l] == s[r] and (r-l <= 2 or dp[l + 1][r - 1])
@@ -22,4 +24,4 @@ def find_max_palindrome(s):
 
 
 if __name__ == '__main__':
-    print(find_max_palindrome('cabac'))
+    print(find_max_palindrome("ac"))
