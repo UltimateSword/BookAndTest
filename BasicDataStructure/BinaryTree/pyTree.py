@@ -92,7 +92,21 @@ class HuffmanCompression(object):
             bits += self.s2b[char]
         return bits
 
+    def uncompress(self, bits):
+        string = ''
+        root = self.root
+        for i in bits:
+            if i == '0':
+                root = root.left
+            else:
+                root = root.right
+            if root.char:
+                string += root.char
+                root = self.root
+        return string
 
 if __name__ == '__main__':
     s = HuffmanCompression('123aaaaa' + 'a'*1000)
-    print(s.compress())
+    cop = s.compress()
+    print(cop)
+    print(s.uncompress(cop))
