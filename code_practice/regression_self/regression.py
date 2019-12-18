@@ -9,6 +9,9 @@ def is_match(s, p) -> bool:
     else:
         return first and is_match(s[1:], p[1:])
 
+def dp_match(s: str, p: str) -> bool:
+    pass
+
 
 if __name__ == '__main__':
     print(is_match('abc', 'a*bc'))
