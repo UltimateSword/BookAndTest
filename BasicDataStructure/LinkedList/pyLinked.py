@@ -1,11 +1,11 @@
-class ListNode():
+class ListNode(object):
 
     def __init__(self, val):
         self.val = val
         self.next = None
 
 
-class LinkedList():
+class LinkedList(object):
 
     def __init__(self, first, *k):
         self.head = ListNode(first)

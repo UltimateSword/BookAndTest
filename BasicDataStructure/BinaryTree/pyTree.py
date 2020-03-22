@@ -1,6 +1,7 @@
 from collections import Counter, deque
 import heapq
 
+
 class Node(object):
     def __init__(self, val):
         self.val = val
@@ -104,6 +105,7 @@ class HuffmanCompression(object):
                 string += root.char
                 root = self.root
         return string
+
 
 if __name__ == '__main__':
     s = HuffmanCompression('123aaaaa' + 'a'*1000)
