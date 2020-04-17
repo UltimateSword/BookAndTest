@@ -34,6 +34,7 @@ class Recall(object):
         trans = ['abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
         tmp = ''
         res = []
+
         def recall(tmp, new_digits):
             if not new_digits:
                 return
@@ -46,8 +47,25 @@ class Recall(object):
         return res
 
 
+def repeat_20_4_10(digits):
+    if not digits:
+        return []
+    res = []
+    tmp = ''
+    trans = ['abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz']
+
+    def recall(tmp, new_digits):
+        if len(new_digits) == 1:
+            for i in trans[int(new_digits[0])-2]:
+                res.append(tmp + i)
+        else:
+            for i in trans[int(new_digits[0])-2]:
+                recall(tmp+i, new_digits[1:])
+    recall(tmp, digits)
+    return res
 
 
 if __name__ == '__main__':
     S = Recall()
-    print(S.letterCombinations('23'))
+    print(S.letterCombinations('23456') == repeat_20_4_10('23456'))
+    print(repeat_20_4_10('23456'))
