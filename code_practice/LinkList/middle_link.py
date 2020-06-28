@@ -23,9 +23,9 @@ Note:
 
 The number of nodes in the given list will be between 1 and 100.
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/middle-of-the-linked-list
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 # Definition for singly-linked list.

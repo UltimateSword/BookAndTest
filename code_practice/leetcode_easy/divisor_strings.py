@@ -25,9 +25,9 @@ Note:
 1 <= str2.length <= 1000
 str1[i] and str2[i] are English uppercase letters.
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/greatest-common-divisor-of-strings
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 

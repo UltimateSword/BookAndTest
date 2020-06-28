@@ -18,9 +18,9 @@ Input: "226"
 Output: 3
 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/decode-ways
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 

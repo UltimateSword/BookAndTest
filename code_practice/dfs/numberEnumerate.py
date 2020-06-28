@@ -3,9 +3,9 @@ Given a string containing digits from 2-9 inclusive, return all possible letter 
 
 A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 # 队列法 先进队列 在拼凑字符串 再吐出来

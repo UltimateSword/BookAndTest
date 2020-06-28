@@ -35,9 +35,9 @@ Constraints:
 
 1 <= seq.size <= 10000
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 

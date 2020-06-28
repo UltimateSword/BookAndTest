@@ -27,9 +27,9 @@ Note:
 1 <= words[i].length, chars.length <= 100
 All strings contain lowercase English letters only.
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 

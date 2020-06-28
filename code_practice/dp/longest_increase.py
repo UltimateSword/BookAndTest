@@ -12,9 +12,9 @@ There may be more than one LIS combination, it is only necessary for you to retu
 Your algorithm should run in O(n2) complexity.
 Follow up: Could you improve it to O(n log n) time complexity?
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/longest-increasing-subsequence
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 

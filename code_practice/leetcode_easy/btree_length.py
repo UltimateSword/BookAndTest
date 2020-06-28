@@ -12,9 +12,9 @@ Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
 
 Note: The length of path between two nodes is represented by the number of edges between them.
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/diameter-of-binary-tree
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 
 实际上这利用了 max 的性质，
 max 是一种在线算法。

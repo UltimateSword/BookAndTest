@@ -17,9 +17,9 @@ Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 class Solution:

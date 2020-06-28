@@ -12,9 +12,9 @@ Output: "abbccd"
 Explanation:
 The compressed string is "a1b2c2d1", which is longer than the original string.
 
-来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/compress-string-lcci
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+
 """
 
 
