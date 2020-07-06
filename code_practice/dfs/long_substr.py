@@ -56,6 +56,14 @@ class Solution:
         return len(s)
 
 
+class Solution1(object):
+    def find(self, s, k):
+        for i in s:
+            if s.count(i) < k:
+                return max([self.find(one, k) for one in s.split(i)])
+        return len(s)
+
+
 if __name__ == '__main__':
     s = Solution()
     print(s.longestSubstring("aaabbb", 3))

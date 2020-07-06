@@ -53,6 +53,18 @@ class Solution:
         return dp[-1][-1]
 
 
+class Solution2(object):
+    def main(self, word1, word2):
+        # easy: "" ""
+        if word1 == word2:
+            return 0
+        m, n = len(word1), len(word2)
+        dp = [[0] * m for _ in range(n)]
+
+
+
+
+
 if __name__ == '__main__':
     s = Solution()
-    print(s.minDistance(word1 = "horse", word2 = "ros"))
+    print(s.minDistance(word1="horse", word2="ros"))

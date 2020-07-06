@@ -51,6 +51,17 @@ class Solution:
         return dp[-1]
 
 
+class Solution2:
+    def caculate(self, l):
+        dp = [i for i in l]
+        for i in range(2, len(l)):
+            dp[i] = max(dp[i-2] + l[i], dp[i-1])
+        return dp[-1]
+
+
+
 if __name__ == '__main__':
     s = Solution()
     print(s.massage([2,1]))
+    s2 = Solution2()
+    print(s2.caculate([2,1,4,5,3,1,1,3]))

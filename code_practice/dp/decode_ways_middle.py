@@ -53,9 +53,31 @@ class Solution:
         return dp[-1]
 
 
+class Solution2():
+    def main(self, s:str):
+        if s[0] == "0":
+            return 0
+        dp = [1 for _ in s]
+        for i in range(1, len(s)):
+            if s[i] == '0':
+                if int(s[i-1:i+1]) > 26:
+                    return 0
+                else:
+                    dp[i] = dp[i-2]
+            else:
+                if int(s[i-1:i+1]) > 26 or s[i-1] == "0":
+                    dp[i] = dp[i-1]
+                else:
+                    if i != 1:
+                        dp[i] = dp[i-1] + dp[i-2]
+                    else:
+                        dp[i] = 2
 
+        return dp[-1]
 
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.numDecodings('110'))
+    print(s.numDecodings('226'))
+    s2 = Solution2()
+    print(s2.main('226'))
