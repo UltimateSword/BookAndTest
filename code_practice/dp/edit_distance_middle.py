@@ -56,10 +56,22 @@ class Solution:
 class Solution2(object):
     def main(self, word1, word2):
         # easy: "" ""
-        if word1 == word2:
-            return 0
-        m, n = len(word1), len(word2)
-        dp = [[0] * m for _ in range(n)]
+        m, n = len(word1) + 1, len(word2) + 1
+        dp = [[0] * n for _ in range(m)]
+        for i in range(m):
+            for j in range(n):
+                if i == 0:
+                    dp[0][j] = j
+                elif j == 0:
+                    dp[i][0] = i
+                else:
+                    left = dp[i - 1][j]
+                    right = dp[i][j - 1]
+                    if word1[i - 1] == word2[j - 1]:
+                        dp[i][j] = min(dp[i - 1][j - 1], left + 1, right + 1)
+                    else:
+                        dp[i][j] = min(dp[i - 1][j - 1] + 1, left + 1, right + 1)
+        return dp[-1][-1]
 
 
 

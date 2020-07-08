@@ -44,6 +44,18 @@ class Solution:
                 token -= 1  # 找到了一个
         return ans
 
+    def main(self, A):
+        A.sort()
+        n = len(A)
+        dp = [0 for _ in range(n)]
+        for i in range(1, n):
+            check = set(A[:i])
+            dp[i] = dp[i - 1]
+            while A[i] in check:
+                A[i] += 1
+                dp[i] += 1
+        return dp[-1]
+
 
 if __name__ == '__main__':
     s = Solution()
